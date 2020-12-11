@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favcon.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- <section class="banner"></section> -->
+    <div class="container">
+        <div class="slider">
+            <div class="slide slide1">
+                <div class="caption">
+                    <h2>Slide1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis molestias reiciendis animi eum laudantium numquam nesciunt veritatis. Atque, earum voluptatem.</p>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="caption">
+                    <h2>Slide2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis molestias reiciendis animi eum laudantium numquam nesciunt veritatis. Atque, earum voluptatem.</p>
+                </div>
+            </div>
+            <div class="slide slide3">
+                <div class="caption">
+                    <h2>Slide3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis molestias reiciendis animi eum laudantium numquam nesciunt veritatis. Atque, earum voluptatem.</p>
+                </div>
+            </div>
+            <div class="slide slide4">
+                <div class="caption">
+                    <h2>Slide4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis molestias reiciendis animi eum laudantium numquam nesciunt veritatis. Atque, earum voluptatem.</p>
+                </div>
+            </div>
+            <div class="slide slide1">
+                <div class="caption">
+                    <h2>Slide1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis molestias reiciendis animi eum laudantium numquam nesciunt veritatis. Atque, earum voluptatem.</p>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+</body>
+</html>
